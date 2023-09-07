@@ -1,0 +1,24 @@
+.div{
+    padding: 2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5rem;
+}
+.cardsdetiles{
+    font-size: 2rem;
+
+}
+.cardsdetiles p{
+  color: gray;
+}
+.swiper{
+    width: 100%;
+    height: 80%;
+}
+.card{
+    width: 28%;
+    height: 80%;
+}

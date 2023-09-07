@@ -1,0 +1,14 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+}
+@media (max-width:780px) {
+  html{
+    font-size: 9px;
+  }
+
+}

@@ -1,0 +1,133 @@
+import styles from "./Home.module.css"
+
+import men_1 from "../../images/men-01.jpg"
+import men_2 from "../../images/men-02.jpg"
+import men_3 from "../../images/men-03.jpg"
+
+import women_1 from "../../images/women-01.jpg"
+import women_2 from "../../images/women-02.jpg"
+import women_3 from "../../images/women-03.jpg"
+
+import kid_1 from "../../images/kid-01.jpg"
+import kid_2 from "../../images/kid-02.jpg"
+import kid_3 from "../../images/kid-03.jpg"
+
+import Cards from "./HC/Cards"
+
+const swipers=[
+  {
+    title:"Men's Latest",
+    details:"Details to details is what makes Hexashop different from the other themes.",
+    products:[
+      {
+        img:men_1,
+        title:"Love Nana'20",
+        price:"$150.00"
+      },
+      {
+        img:men_2,
+        title:"Classic Spring",
+        price:"$120.00"
+      },{
+        img:men_3,
+        title:"Classic Spring",
+        price:"$120.00"
+      },  {
+        img:men_1,
+        title:"Love Nana'20",
+        price:"$150.00"
+      },
+      {
+        img:men_2,
+        title:"Classic Spring",
+        price:"$120.00"
+      },{
+        img:men_3,
+        title:"Classic Spring",
+        price:"$120.00"
+      }
+    ]
+  },
+  {
+    title:"Women's Latest",
+    details:"Details to details is what makes Hexashop different from the other themes.",
+    products:[
+      {
+        img:women_1,
+        title:"New Green jacket",
+        price:"$750.00"
+      },
+      {
+        img:women_2,
+        title:"Spring Collection",
+        price:"$570.00"
+      },{
+        img:women_3,
+        title:"Classic Dress",
+        price:"$990.00"
+      },  {
+        img:women_1,
+        title:"New Green jacket",
+        price:"$750.00"
+      },
+      {
+        img:women_2,
+        title:"Spring Collection",
+        price:"$570.00"
+      },{
+        img:women_3,
+        title:"Classic Dress",
+        price:"$990.00"
+      }
+    ]
+  },{
+    title:"Kid's Latest",
+    detils:"Details to details is what makes Hexashop different from the other themes.",
+    products:[
+      {
+        img:kid_1,
+        title:"School collection",
+        price:"$435.00"
+      },
+      {
+        img:kid_2,
+        title:"Summer Cap",
+        price:"$80.00"
+      },{
+        img:kid_3,
+        title:"Classic Kid",
+        price:"$1230.00"
+      },  {
+        img:kid_1,
+        title:"School collection",
+        price:"$435.00"
+      },
+      {
+        img:kid_2,
+        title:"Summer Cap",
+        price:"$80.00"
+      },{
+        img:kid_3,
+        title:"Classic Spring",
+        price:"$1230.00"
+      }
+    ]
+  }
+]
+export default function Home() {
+  return (
+    <>
+    <div className={styles.home}>
+
+
+      <div className={styles.cardsveiw}>
+        {swipers.map((item,i)=>(
+             <Cards key={i} title={item.title} detils={item.details} products={item.products}/>
+        ))}
+      </div>
+
+    </div>
+      
+   </>
+  )
+}
