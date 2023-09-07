@@ -1,0 +1,144 @@
+.nav{
+    position: relative;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+.innerdiv{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    cursor: pointer;
+}
+.logo img{
+    width: 17rem;
+}
+.manu{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+}
+.manu li{
+    list-style: none;
+    position: relative;
+}
+.link{
+    color: black;
+    font-size: 2rem;
+    text-decoration: none;
+    transform:0.2s linear;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:5px;
+}
+.link:active{
+    color: grey;
+}
+.link:hover{
+    color: gray;
+    transform:0.2s linear;
+}
+.lpages{
+    position: absolute;
+    top:300%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 200%;
+    opacity: 0;
+    transition:all 0.2s linear;
+    z-index: 5;
+}
+.li{
+    width: 100%;
+    background-color:#F7F7F7 ;
+    padding: 0.5rem  0.7rem;
+    transition: 0.2s linear;
+}
+.inlink{
+ font-size: 1.5rem ;
+ text-decoration: none;
+ color: black;
+ transition: 0.2s linear;
+}
+.li:hover{
+    background-color: #fff;
+    padding-left: 1.5rem;
+    transition: 0.2s linear;
+}
+.li:hover .inlink{
+    color: gray;
+    transition: 0.3s linear;
+}
+.pagein{
+    position:relative;
+    z-index: 1;
+}
+.pagein:hover .lpages{
+   top:100%;
+   opacity: 1;
+   transition:all 0.3s linear;
+}
+.togglemanu{
+    font-size: 2.5rem;
+    display: None;
+}
+.manuclicked{
+    position: absolute;
+    top:100%;
+    width: 80%;
+    display: block;
+    height: 50vh;
+}
+.manuclicked li{
+    list-style: none;
+    background-color: #F7F7F7;
+    padding: 1rem 2rem;
+    color: black;
+    transition: all 0.2s linear;
+}
+.manuclicked li:hover{
+    background-color: #EEEEEE;
+    color: gray;
+    transition: all 0.2s linear;
+}
+.lpagesclicked{
+    display: none;
+}
+.manuclicked .pagein:hover .lpagesclicked{
+    display: block;
+}
+
+@media (max-width:980px) {
+    .innerdiv{
+        width: 95%;
+    }
+    .manu{
+        display: none;
+    }
+    .lpages{
+        display: none;
+    }
+    .togglemanu{
+        display: inline;
+    }
+}
+@media (max-width:1100px) {
+    .innerdiv{
+        width: 85%;
+    }
+    .manu{
+        width: 65%;
+    }
+}
