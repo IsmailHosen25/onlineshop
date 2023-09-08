@@ -17,13 +17,147 @@
     gap: 5rem;
 
 }
+
+
+.selector{
+    width: 98%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    padding: 4rem 0rem;
+}
+
+.slleft{
+    width: 49%;
+    height: 66rem;
+}
+.slright{
+    width: 49%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.forcatagor1{
+    width: 48%;
+    height: 32rem;
+    background-image: url("../../images/baner-right-image-01.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.forcatagor1::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    background-color: black;
+    opacity: 0.1;
+}
+
+.forcatagor2{
+    width: 48%;
+    height: 32rem;
+    background-image: url("../../images/baner-right-image-02.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.forcatagor2::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    background-color: black;
+    opacity: 0.1;
+}
+
+
+.forcatagor3{
+    width: 48%;
+    height: 32rem;
+    background-image: url("../../images/baner-right-image-03.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.forcatagor3::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    background-color: black;
+    opacity: 0.1;
+}
+
+
+.forcatagor4{
+    width: 48%;
+    height: 32rem;
+    background-image: url("../../images/baner-right-image-04.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.forcatagor4::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    background-color: black;
+    opacity: 0.1;
+}
+
+.homexpcom{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 1rem;
+}
+
+@media (max-width:1100px) {
+    .selector{
+       flex-wrap: wrap;
+    }
+    .slleft{
+        width: 100%;
+    }
+    .slright{
+        width: 100%;
+    }
+}
 @media (max-width:980px) {
     .cardsveiw{
+        width: 90%;
+    }
+}
+@media (max-width:780px) {
+    .homexpcom{
         width: 90%;
     }
 }
 @media (max-width:720px) {
     .cardsveiw{
         width: 96%;
+    }
+    .forcatagor1{
+        width: 100%;
+    }
+    .forcatagor2{
+        width: 100%;
+    }
+    .forcatagor3{
+        width: 100%;
+    }
+    .forcatagor4{
+        width: 100%;
     }
 }

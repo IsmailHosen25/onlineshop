@@ -1,0 +1,20 @@
+.seselectpurchase{
+    width: 100%;
+    height: 100%;
+    background-image: url("../../../../images/left-banner-image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 5rem;
+}
+.details{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap:1.5rem;
+  font-size: 2rem;
+  color: #fff;
+}

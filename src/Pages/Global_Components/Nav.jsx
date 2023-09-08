@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react"
+import {useState } from "react"
 import styles from "./GC_Css/Nav.module.css"
 import logo from "../../images/logo.png"
 import { Link,useNavigate} from "react-router-dom"
@@ -54,11 +54,11 @@ export default function Nav() {
                 </div>
             </li>
             <li>
-                <Link className={styles.link} to={"/"} >Explore</Link>
+                <Link className={styles.link} to={"/explore"} >Explore</Link>
             </li>
           </div>
           <div className={styles.togglemanu} onClick={clickedmanu}>
-                <i className="fa-solid fa-bars-staggered"></i>
+            {clickmanu ? <i class="fa-solid fa-xmark"></i>:<i className="fa-solid fa-bars-staggered"></i>}
           </div>
         </div>
     </div>

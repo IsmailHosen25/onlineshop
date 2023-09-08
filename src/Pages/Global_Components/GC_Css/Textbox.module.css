@@ -1,0 +1,32 @@
+.textbox{
+    width: 49%;
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.8rem;
+    background-color: #F8F8F8;
+}
+.textbox h2{
+    color: black;
+}
+.textbox p{
+    color: gray
+}
+@media (max-width:1200px) {
+    .textbox{
+         height: 38rem;
+    }
+    }
+@media (max-width:980px) {
+        .textbox{
+            height: 30rem;
+        }
+    }
+@media (max-width:780px) {
+        .textbox{
+            width: 100%;
+        }
+    }

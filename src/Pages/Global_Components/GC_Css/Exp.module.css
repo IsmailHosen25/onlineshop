@@ -1,0 +1,51 @@
+.exp{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.expleft{
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+    font-size: 1.5rem;
+}
+.expleft h1{
+    font-size: 3rem;
+}
+.p{
+    color: #AAAAAA;
+}
+.ep{
+    color: #000;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap:1.5rem;
+}
+.ep i{
+    font-size: 4rem;
+}
+.expright{
+    width: 48%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+@media (max-width:1200px) {
+    .exp{
+        flex-wrap: wrap;
+        gap: 3rem;
+    }
+    .expleft{
+        width: 100%;
+    }
+    .expright{
+        width: 100%;
+    }
+}

@@ -1,5 +1,7 @@
 import styles from "./Home.module.css"
-
+import Catagorymanu from "./HC/Catagorymaun"
+import Selectpurchase from "./HC/Selectpurchase"
+import Exp from "../Global_Components/Exp"
 import men_1 from "../../images/men-01.jpg"
 import men_2 from "../../images/men-02.jpg"
 import men_3 from "../../images/men-03.jpg"
@@ -114,16 +116,56 @@ const swipers=[
     ]
   }
 ]
+
+const Catagoryobject=[{
+  title:"Women",
+  classes:styles.forcatagor1,
+  p1:"Best Clothes for Women",
+  p2:"Lorem ipsum dolor, sit amet consectetur."
+},
+{
+  title:"Men",
+  classes:styles.forcatagor2,
+  p1:"Best Clothes for Men",
+  p2:"Lorem ipsum dolor, sit amet consectetur."
+},
+{
+  title:"Kids",
+  classes:styles.forcatagor3,
+  p1:"Best Clothes for Kids",
+  p2:"Lorem ipsum dolor, sit amet consectetur."
+},
+{
+  title:"Accessories",
+  classes:styles.forcatagor4,
+  p1:"Best Trande Accessories",
+  p2:"Lorem ipsum dolor, sit amet consectetur."
+}]
 export default function Home() {
   return (
     <>
     <div className={styles.home}>
+
+     <div className={styles.selector}>
+           <div className={styles.slleft}>
+                 <Selectpurchase/>
+           </div>
+           <div className={styles.slright}>
+            {Catagoryobject.map((item,i)=>(
+                   <Catagorymanu key={i} classes={item.classes} title={item.title} p1={item.p1} p2={item.p2} />
+            ))}
+           </div>
+     </div>
 
 
       <div className={styles.cardsveiw}>
         {swipers.map((item,i)=>(
              <Cards key={i} title={item.title} detils={item.details} products={item.products}/>
         ))}
+      </div>
+
+      <div className={styles.homexpcom}>
+          <Exp/>
       </div>
 
     </div>

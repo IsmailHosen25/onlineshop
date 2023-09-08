@@ -1,0 +1,36 @@
+.imgbox{
+    width: 48%;
+    height: 25rem;
+}
+.imgbox img{
+    width: 100%;
+    height: 100%;
+}
+@media (max-width:1200px) {
+    .imgbox{
+         height: 38rem;
+    }
+    }
+@media (max-width:980px) {
+        .imgbox{
+            height: 30rem;
+        }
+    }
+@media (max-width:780px) {
+        .imgbox{
+            width: 100%;
+            height: 58rem;
+        }
+    }
+@media (max-width:620px) {
+        .imgbox{
+            width: 100%;
+            height: 45rem;
+        }
+    }
+@media (max-width:480px) {
+        .imgbox{
+            width: 100%;
+            height: 35rem;
+        }
+    }

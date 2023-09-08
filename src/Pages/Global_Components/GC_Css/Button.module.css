@@ -1,0 +1,34 @@
+.button{
+    padding:0.9rem 2rem;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+.button:hover{
+  background-color: #fff;
+  color: #000;
+  transition: all 0.2s linear;
+}
+.button2{
+    padding:0.9rem 2rem;
+    border: 1px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    background-color: transparent;
+    color: #000;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+.button2:hover{
+    background-color: #000;
+    color: #fff;
+    transition: all 0.2s linear;
+}
