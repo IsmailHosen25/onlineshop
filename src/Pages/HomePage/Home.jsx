@@ -1,6 +1,9 @@
 import styles from "./Home.module.css"
 import Catagorymanu from "./HC/Catagorymaun"
 import Selectpurchase from "./HC/Selectpurchase"
+import useNavContext from "../../Hooks/useNavContext"
+
+
 import Exp from "../Global_Components/Exp"
 import men_1 from "../../images/men-01.jpg"
 import men_2 from "../../images/men-02.jpg"
@@ -142,9 +145,13 @@ const Catagoryobject=[{
   p2:"Lorem ipsum dolor, sit amet consectetur."
 }]
 export default function Home() {
+  const {setclickmanu} =useNavContext()
+  const clicked =()=>{
+    setclickmanu(false)
+  }
   return (
     <>
-    <div className={styles.home}>
+    <div className={styles.home} onClick={clicked}>
 
      <div className={styles.selector}>
            <div className={styles.slleft}>

@@ -63,7 +63,6 @@
 .li{
     width: 100%;
     background-color:#F7F7F7 ;
-    padding: 0.5rem  0.7rem;
     transition: 0.2s linear;
 }
 .inlink{
@@ -71,6 +70,9 @@
  text-decoration: none;
  color: black;
  transition: 0.2s linear;
+ padding: 0.5rem  0.7rem;
+ display: block;
+ width: 100%;
 }
 .li:hover{
     background-color: #fff;
