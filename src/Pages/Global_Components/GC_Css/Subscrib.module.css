@@ -1,0 +1,73 @@
+.subscrib{
+    width: 80%;
+    padding: 6rem 0rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.sendsub{
+    width: 60%;
+}
+.address{
+     width: 32%;
+     display: flex;
+     justify-content: space-between;
+     align-items: flex-start;
+     flex-wrap: wrap;
+     gap:1rem
+}
+.subdata{
+    width: 47%;
+}
+.address h2{
+    font-size: 1.9rem;
+}
+.address p{
+    font-size: 1.2rem;
+    color: gray;
+}
+.addleft{
+    width: 45%;
+}
+.addright{
+    width: 45%;
+}
+.socialmedia{
+    width: 47%;
+}
+.link{
+    text-decoration: none;
+    color: gray;
+    cursor: pointer;
+}
+.link:hover{
+    color: black;
+    transition: 0.1s linear;
+}
+
+.form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1.7rem;
+}
+@media (max-width:1180px) {
+    .subscrib{
+        width: 80%;
+        flex-wrap: wrap;
+        gap:3rem;
+    }
+    .sendsub{
+        width: 100%;
+    }
+    .address{
+        width: 100%;
+    }
+}
+@media (max-width:980px) {
+    .subscrib{
+        width: 85%;
+    }
+}

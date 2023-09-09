@@ -1,0 +1,30 @@
+.footerlink{
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2.7rem;
+}
+.h{
+    font-size: 2rem;
+}
+.links{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+.link{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition:  0.2s linear;
+}
+.link:hover{
+    color: gray;
+    transition: 0.2s linear;
+}

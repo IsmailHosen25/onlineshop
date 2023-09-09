@@ -11,7 +11,10 @@ export default function Nav() {
     }
 
     const clickedmanu=()=>{
-           if(clickmanu==false){
+           setclickmanu(false)
+    }
+    const clickedmanufromvar=()=>{
+        if(clickmanu==false){
             setclickmanu(true)
            }
            else{
@@ -58,7 +61,7 @@ export default function Nav() {
                 <Link className={styles.link} to={"/explore"} onClick={clickedmanu} >Explore</Link>
             </li>
           </div>
-          <div className={styles.togglemanu} onClick={clickedmanu}>
+          <div className={styles.togglemanu} onClick={clickedmanufromvar}>
             {clickmanu ? <i class="fa-solid fa-xmark"></i>:<i className="fa-solid fa-bars-staggered"></i>}
           </div>
         </div>

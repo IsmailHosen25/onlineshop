@@ -1,0 +1,111 @@
+.footer{
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    background-color: transparent;
+}
+.footerup{
+    width: 100%;
+    padding: 3rem ;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 1px solid #fff;
+}
+.addres{
+ width: 22%;
+ display: flex;
+ flex-direction: column;
+ justify-content: flex-start;
+ align-items: flex-start;
+ gap: 1rem;
+}
+.addres p{
+    color: white;
+    font-size: 1.5rem;
+}
+.pagelink{
+    width: 73%;
+    display: flex;
+    justify-content:space-between ;
+    align-items: flex-start;
+    gap: 1rem;
+}
+.footerbottom{
+    width: 100%;
+    padding: 2rem 0rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    gap: 2rem;
+}
+.designerdetails{
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.designerlink{
+    color: #8cf5d9;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.2s linear;
+}
+.designerlink:hover{
+    color: #BD5245;
+    transition: 0.2s linear;
+}
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.link{
+    color: #8cf5d9;
+    font-size: 2rem;
+    transition: 0.2s linear;
+}
+.link:hover{
+    color:#BD5245 ;
+    transition: 0.2s linear;
+}
+@media (max-width:1100px) {
+    .footer{
+      width: 88%;
+    }
+    .footerup{
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+    }
+    .addres{
+        width: 100%;
+    }
+    .pagelink{
+        width: 100%;
+    }
+}
+@media (max-width:780px) {
+    .footer{
+      width: 98%;
+    }
+}
+@media (max-width:580px) {
+    .footer{
+        width: 100%;
+      }
+    .pagelink{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 4rem;
+    }
+}

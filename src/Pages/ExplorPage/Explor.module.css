@@ -14,6 +14,20 @@
     align-items: center;
     padding: 5rem 1rem;
 }
+.footer{
+    width: 100%;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+.suboption{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 @media (max-width:780px) {
     .expcom{
         width: 85%;

@@ -123,6 +123,23 @@
     padding: 5rem 1rem;
 }
 
+.footer{
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 2rem;
+}
+
+.suboption{
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
 @media (max-width:1100px) {
     .selector{
        flex-wrap: wrap;
@@ -138,8 +155,6 @@
     .cardsveiw{
         width: 90%;
     }
-}
-@media (max-width:780px) {
     .homexpcom{
         width: 90%;
     }

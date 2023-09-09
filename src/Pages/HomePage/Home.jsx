@@ -2,7 +2,7 @@ import styles from "./Home.module.css"
 import Catagorymanu from "./HC/Catagorymaun"
 import Selectpurchase from "./HC/Selectpurchase"
 import useNavContext from "../../Hooks/useNavContext"
-
+import Subscrib from "../Global_Components/Subscrib"
 
 import Exp from "../Global_Components/Exp"
 import men_1 from "../../images/men-01.jpg"
@@ -18,6 +18,7 @@ import kid_2 from "../../images/kid-02.jpg"
 import kid_3 from "../../images/kid-03.jpg"
 
 import Cards from "./HC/Cards"
+import Footer from "../Global_Components/Footer"
 
 const swipers=[
   {
@@ -174,7 +175,12 @@ export default function Home() {
       <div className={styles.homexpcom}>
           <Exp/>
       </div>
-
+      <div className={styles.suboption}>
+             <Subscrib/>
+      </div>
+      <div className={styles.footer}>
+        <Footer/>
+      </div>
     </div>
       
    </>
