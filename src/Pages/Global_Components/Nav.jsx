@@ -33,15 +33,15 @@ export default function Nav() {
             </li>
 
             <li>
-                <Link className={styles.link} to={"/"} onClick={clickedmanu} >Men's</Link>
+                <Link className={styles.link} to={"/men"} onClick={clickedmanu} >Men's</Link>
             </li>
 
             <li>
-                <Link className={styles.link} to={"/"} onClick={clickedmanu}>Women's</Link>
+                <Link className={styles.link} to={"/women"} onClick={clickedmanu}>Women's</Link>
             </li>
 
             <li>
-                <Link className={styles.link} to={"/"} onClick={clickedmanu} >Kid's</Link>
+                <Link className={styles.link} to={"/kid"} onClick={clickedmanu} >Kid's</Link>
             </li>
             <li className={styles.pagein}>
                 <div><p className={styles.link}>Pages <i className="fa-solid fa-angle-down"></i></p></div>
@@ -50,10 +50,10 @@ export default function Nav() {
                         <Link to={"/"} className={styles.inlink} onClick={clickedmanu}>Products</Link>
                     </li>
                     <li className={styles.li }>
-                        <Link to={"/"} className={styles.inlink}  onClick={clickedmanu}>About Us</Link>
+                        <Link to={"/about"} className={styles.inlink}  onClick={clickedmanu}>About Us</Link>
                     </li>
                     <li className={styles.li}>
-                        <Link to={"/"} className={styles.inlink} onClick={clickedmanu}>Countect Us</Link>
+                        <Link to={"/contect"} className={styles.inlink} onClick={clickedmanu}>Countect Us</Link>
                     </li>
                 </div>
             </li>

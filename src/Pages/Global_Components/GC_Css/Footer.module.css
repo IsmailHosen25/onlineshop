@@ -108,4 +108,7 @@
       align-items: center;
       gap: 4rem;
     }
+    .designerdetails{
+        font-size: 1.3rem;
+    }
 }

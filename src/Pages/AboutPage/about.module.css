@@ -1,0 +1,28 @@
+.about{
+    width: 100%;
+}
+.bannar{
+    padding: 3rem 0rem;
+}
+.pagebannar{
+    width: 100%;
+    position: relative;
+    background-image: url(../../images/about-us-page-heading.jpg);
+    background-repeat:no-repeat ;
+    background-size: cover;
+    height: 40rem;
+}
+.footer{
+    width: 100%;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.suboption{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px dashed gray;
+}

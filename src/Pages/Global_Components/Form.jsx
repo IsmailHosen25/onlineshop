@@ -1,7 +1,9 @@
 import styles from "./GC_Css/Form.module.css"
 import { useFormik } from "formik"
 import * as yup from "yup"
-export default function Form({textarea,classes}) {
+
+
+export default function Form({textarea,classes, heading,p}) {
 
 
      const formik =useFormik({
@@ -13,9 +15,9 @@ export default function Form({textarea,classes}) {
              name:yup.string()
                      .required("Name is required"),
              email:yup.string()
-                      .required("Email required"),
+                      .required("Email is required"),
              text:yup.string()
-                     .max(500,"Text must be within 100 word")
+                     .max(200,"Text must be within 200 word")
       }),
       onSubmit:(values)=>{
         alert("submitted successfully")
@@ -25,7 +27,7 @@ export default function Form({textarea,classes}) {
 const h=()=>{
   return (
     <>
-    <textarea name="text" onChange={formik.handleChange}>
+    <textarea name="text" onChange={formik.handleChange} className={styles.textarea} placeholder="Your message">
     {formik.values.text}
     </textarea>
     <label><i>{formik.errors.text}</i></label>
@@ -35,13 +37,13 @@ const h=()=>{
 }
 
   return (
-    <div className={classes}>
+    <div className={styles.form}>
             <div className={styles.formheading}>
-                <h1><b>By Subscribing To Our Newsletter You Can Get 30% Off</b></h1>
-                <p><i>Details to details is what makes Hexashop different from the other themes.</i></p>
+                <h1><b>{heading}</b></h1>
+                <p><i>{p}</i></p>
             </div>
             <div className={styles.formdiv}> 
-              <form onSubmit={formik.handleSubmit} className={styles.forminput}>
+              <form onSubmit={formik.handleSubmit} className={classes}>
 
                 <div className={styles.input}>
 

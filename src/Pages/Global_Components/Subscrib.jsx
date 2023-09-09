@@ -25,7 +25,7 @@ export default function Subscrib() {
   return (
     <div className={styles.subscrib}>
         <div className={styles.sendsub}>
-            <Form classes={styles.form}/>
+            <Form classes={styles.forminput} heading={"By Subscribing To Our Newsletter You Can Get 30% Off"} p={"Details to details is what makes Hexashop different from the other themes."}/>
         </div>
         
         <div className={styles.address}>

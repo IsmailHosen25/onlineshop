@@ -15,6 +15,7 @@
     justify-content: center;
     align-items: center;
     gap: 5rem;
+    border-top: 1px dashed gray;
 
 }
 
@@ -26,6 +27,7 @@
     align-items: center;
     gap: 2rem;
     padding: 4rem 0rem;
+    border-top: 1px dashed gray;
 }
 
 .slleft{
@@ -121,6 +123,7 @@
     justify-content: center;
     align-items: center;
     padding: 5rem 1rem;
+    border-top: 1px dashed gray;
 }
 
 .footer{
@@ -129,7 +132,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 4rem 2rem;
+    padding-top: 4rem;
+    border-top: 1px dashed gray;
 }
 
 .suboption{
@@ -138,6 +142,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    border-top: 1px dashed gray;
     
 }
 @media (max-width:1100px) {
