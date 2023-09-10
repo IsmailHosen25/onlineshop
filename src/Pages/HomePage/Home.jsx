@@ -28,29 +28,35 @@ const swipers=[
       {
         img:men_1,
         title:"Love Nana'20",
-        price:"$150.00"
+        price:150.00,
+        quntity:1
       },
       {
         img:men_2,
         title:"Classic Spring",
-        price:"$120.00"
+        price:120.00,
+        quntity:1
       },{
         img:men_3,
         title:"Classic Spring",
-        price:"$120.00"
+        price:120.00,
+        quntity:1
       },  {
         img:men_1,
         title:"Love Nana'20",
-        price:"$150.00"
+        price:150.00,
+        quntity:1
       },
       {
         img:men_2,
         title:"Classic Spring",
-        price:"$120.00"
+        price:120.00,
+        quntity:1
       },{
         img:men_3,
         title:"Classic Spring",
-        price:"$120.00"
+        price:120.00,
+        quntity:1
       }
     ]
   },
@@ -61,29 +67,35 @@ const swipers=[
       {
         img:women_1,
         title:"New Green jacket",
-        price:"$750.00"
+        price:750.00,
+        quntity:1
       },
       {
         img:women_2,
         title:"Spring Collection",
-        price:"$570.00"
+        price:570.00,
+        quntity:1
       },{
         img:women_3,
         title:"Classic Dress",
-        price:"$990.00"
+        price:990.00,
+        quntity:1
       },  {
         img:women_1,
         title:"New Green jacket",
-        price:"$750.00"
+        price:750.00,
+        quntity:1
       },
       {
         img:women_2,
         title:"Spring Collection",
-        price:"$570.00"
+        price:570.00,
+        quntity:1
       },{
         img:women_3,
         title:"Classic Dress",
-        price:"$990.00"
+        price:990.00,
+        quntity:1
       }
     ]
   },{
@@ -93,29 +105,35 @@ const swipers=[
       {
         img:kid_1,
         title:"School collection",
-        price:"$435.00"
+        price:435.00,
+        quntity:1
       },
       {
         img:kid_2,
         title:"Summer Cap",
-        price:"$80.00"
+        price:80.00,
+        quntity:1
       },{
         img:kid_3,
         title:"Classic Kid",
-        price:"$1230.00"
+        price:1230.00,
+        quntity:1
       },  {
         img:kid_1,
         title:"School collection",
-        price:"$435.00"
+        price:435.00,
+        quntity:1
       },
       {
         img:kid_2,
         title:"Summer Cap",
-        price:"$80.00"
+        price:80.00,
+        quntity:1
       },{
         img:kid_3,
         title:"Classic Spring",
-        price:"$1230.00"
+        price:1230.00,
+        quntity:1
       }
     ]
   }
@@ -167,9 +185,11 @@ export default function Home() {
 
 
       <div className={styles.cardsveiw}>
+
         {swipers.map((item,i)=>(
-             <Cards key={i} title={item.title} detils={item.details} products={item.products}/>
-        ))}
+             <Cards key={i}  swiper={item}/>
+        )
+        )}
       </div>
 
       <div className={styles.homexpcom}>

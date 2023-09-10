@@ -1,0 +1,46 @@
+.viewdata{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.data{
+    width: 80%;
+    padding: 3rem 0rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.img{
+    width: 50%;
+}
+.img img{
+width: 100%;
+}
+.detalis{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1rem;
+}
+.detalis h2{
+    font-size: 3rem;
+}
+.detalis p{
+    font-size: 2rem;
+}
+.btn{
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    transition: all 0.2s linear;
+}
+.btn:hover{
+    border: 1px solid #000;
+    background-color: #fff;
+    color: #000;
+    transition: all 0.2s linear;
+}

@@ -62,7 +62,7 @@ export default function Nav() {
             </li>
           </div>
           <div className={styles.togglemanu} onClick={clickedmanufromvar}>
-            {clickmanu ? <i class="fa-solid fa-xmark"></i>:<i className="fa-solid fa-bars-staggered"></i>}
+            {clickmanu ? <i className="fa-solid fa-xmark"></i>:<i className="fa-solid fa-bars-staggered"></i>}
           </div>
         </div>
     </div>

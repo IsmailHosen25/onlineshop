@@ -1,0 +1,38 @@
+.men{
+    width: 100%;
+}
+.bannar{
+    width: 100%;
+    padding: 3rem 0rem;
+    border-top: 1px dashed gray;
+}
+.pagebannar{
+    width: 100%;
+    position: relative;
+    background-image: url(../../images/products-page-heading.jpg);
+    background-repeat:no-repeat ;
+    background-size: cover;
+    height: 40rem;
+    color: #fff;
+}
+.products{
+    
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer{
+    width: 100%;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.suboption{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px dashed gray;
+}

@@ -7,12 +7,14 @@ import { Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 
-export default function Cards({title,detils,products}) {
+export default function Cards({swiper}) {
+
+
   return (
     <div className={styles.div}>
     <div className={styles.cardsdetiles}>
-       <h1>{title}</h1>
-       <p><i>{detils}</i></p>
+       <h1>{swiper.title}</h1>
+       <p><i>{swiper.details}</i></p>
     </div>
   <Swiper 
       className={styles.swiper}
@@ -35,10 +37,10 @@ export default function Cards({title,detils,products}) {
         }
       }}
     >
-    {products.map((item,i)=>(
+    {swiper.products.map((item,i)=>(
 
     <SwiperSlide key={i} className={styles.card} >
-             <Card  img={item.img} title={item.title} price={item.price}/>
+             <Card  product={item}/>
     </SwiperSlide>
   ))}
  </Swiper>

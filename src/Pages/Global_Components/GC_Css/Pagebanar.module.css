@@ -10,9 +10,25 @@
 }
 .heading h1{
     font-size: 5.5rem;
-    color: white;
 }
 .heading p{
     font-size: 1.5rem;
-    color: white;
+}
+@media (max-width:1080px) {
+    .heading h1{
+        font-size: 4rem;
+    }
+    .heading p{
+        font-size: 1.3rem;
+    }
+}
+@media (max-width:720px) {
+    .heading h1{
+        font-size: 3rem;
+        text-align: center;
+        padding: 0rem 0.8rem;
+    }
+    .heading p{
+        font-size: 1.1rem;
+    }
 }
