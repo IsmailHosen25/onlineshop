@@ -24,10 +24,10 @@ function App() {
   <NavProvider>
     <CartProvider>
      <ViewContextProvider>
-    <Nav/>
+      <Nav/>
     <Carticon/>
      <Routes>
-       <Route path='/' element={<Home/>}/>
+       <Route path="/onlineshop" element={<Home/>}/>
        <Route path='/men' element={<Men/>}/>
        <Route path='/women' element={<Women/>}/>
        <Route path='/kid' element={<Kid/>}/>

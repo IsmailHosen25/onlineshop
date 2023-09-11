@@ -3,6 +3,8 @@ import Pagebanar from "../Global_Components/Pagebanar"
 import Footer from "../Global_Components/Footer"
 import Subscrib from "../Global_Components/Subscrib"
 import Productspage from '../Global_Components/Productspage'
+import Exp from '../Global_Components/Exp'
+
 
 import kid_1 from "../../images/kid-01.jpg"
 import kid_2 from "../../images/kid-02.jpg"
@@ -56,6 +58,9 @@ export default function Kid() {
     <div className={styles.products}>
         <Productspage title={"Our Kid's Latest Products"} products={products}/>
        </div>
+       <div className={styles.kidexpcom}>
+          <Exp/>
+      </div>
 
     <div className={styles.suboption}>
        <Subscrib/>

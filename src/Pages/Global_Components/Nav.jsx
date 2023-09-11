@@ -29,7 +29,7 @@ export default function Nav() {
           </div>
           <div className={`${clickmanu ? `${styles.manuclicked}`:`${styles.manu}`} `}>
             <li>
-                <Link className={styles.link} to={"/"} onClick={clickedmanu} >Home</Link>
+                <Link className={styles.link} to={"/onlineshop"} onClick={clickedmanu} >Home</Link>
             </li>
 
             <li>
@@ -47,7 +47,7 @@ export default function Nav() {
                 <div><p className={styles.link}>Pages <i className="fa-solid fa-angle-down"></i></p></div>
                 <div className={`${clickmanu ? `${styles.lpagesclicked}`:`${styles.lpages}`} `}>
                     <li className={styles.li}>
-                        <Link to={"/"} className={styles.inlink} onClick={clickedmanu}>Products</Link>
+                        <Link to={"/onlineshop"} className={styles.inlink} onClick={clickedmanu}>Products</Link>
                     </li>
                     <li className={styles.li }>
                         <Link to={"/about"} className={styles.inlink}  onClick={clickedmanu}>About Us</Link>

@@ -3,7 +3,6 @@ import {useNavigate} from "react-router-dom"
 export default function Button({children, mode,title}) {
      const navigate =useNavigate()
     const buttonclicked=()=>{
-      console.log(title)
       if(title==="Men"){
         navigate("/men")
         return
@@ -17,7 +16,11 @@ export default function Button({children, mode,title}) {
         return
       }
       if(title==="Accessories"){
-        navigate("/")
+        navigate("/onlineshop")
+        return
+      }
+      if(title==="explore"){
+        navigate("/onlineshop")
         return
       }
       

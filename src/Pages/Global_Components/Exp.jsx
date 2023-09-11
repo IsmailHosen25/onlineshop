@@ -22,7 +22,7 @@ export default function Exp() {
             <p className={styles.p}>
             If this template is beneficial for your website or business, please kindly support us a little via PayPal. Please also tell your friends about our great website. Thank you.
             </p>
-            <Button mode={false} title="exlore">Discover More</Button>
+            <Button mode={false} title="explore">Discover More</Button>
         </div>
         <div className={styles.expright}>
               <Textbox h="Leather Bags" p="Latest Collection"/>

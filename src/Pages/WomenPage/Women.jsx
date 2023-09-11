@@ -3,6 +3,7 @@ import Pagebanar from "../Global_Components/Pagebanar"
 import Footer from "../Global_Components/Footer"
 import Subscrib from "../Global_Components/Subscrib"
 import Productspage from '../Global_Components/Productspage'
+import Exp from '../Global_Components/Exp'
 
 import women_1 from "../../images/women-01.jpg"
 import women_2 from "../../images/women-02.jpg"
@@ -53,7 +54,9 @@ export default function Women() {
     <div className={styles.products}>
         <Productspage title={"Our Women's Latest Products"} products={products}/>
        </div>
-
+       <div className={styles.womenexpcom}>
+          <Exp/>
+      </div>
     <div className={styles.suboption}>
        <Subscrib/>
      </div>

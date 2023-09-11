@@ -6,35 +6,35 @@ export default function Footer() {
     const footerlink=[{
         h:"Shoping & Categories",
         p1:"Men's shopping",
-        p1link:"/",
+        p1link:"/men",
         p2:"Women's shopping",
-        p2link:"/",
+        p2link:"/women",
         p3:"Kid's shopping",
-        p3link:"/",
+        p3link:"/kid",
         p4:"",
         p4link:""
     },
     {
         h:"Useful Linkes",
         p1:"Home Page",
-        p1link:"/",
+        p1link:"/onlineshop",
         p2:"About Us",
         p2link:"/about",
         p3:"Help",
-        p3link:"/help",
+        p3link:"/onlineshop",
         p4:"Contect Us",
         p4link:"/contect"
     },{
     
         h:"Help & Information",
         p1:"Help",
-        p1link:"/",
+        p1link:"/onlineshop",
         p2:"FAQ's",
-        p2link:"/",
+        p2link:"/onlineshop",
         p3:"Shipping",
-        p3link:"/",
+        p3link:"/onlineshop",
         p4:"Tracking ID",
-        p4link:"/"
+        p4link:"/onlineshop"
     
     }
     ]
