@@ -10,7 +10,7 @@ export default function Form({textarea,classes, heading,p}) {
       initialValues:{
         name:"",
         email:"",
-        text:""
+        text:"",
       },validationSchema:yup.object({
              name:yup.string()
                      .required("Name is required"),

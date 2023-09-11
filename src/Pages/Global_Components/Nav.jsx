@@ -60,6 +60,9 @@ export default function Nav() {
             <li>
                 <Link className={styles.link} to={"/explore"} onClick={clickedmanu} >Explore</Link>
             </li>
+            <li>
+                <Link className={styles.link} to={"/login"} onClick={clickedmanu} >Login</Link>
+            </li>
           </div>
           <div className={styles.togglemanu} onClick={clickedmanufromvar}>
             {clickmanu ? <i className="fa-solid fa-xmark"></i>:<i className="fa-solid fa-bars-staggered"></i>}

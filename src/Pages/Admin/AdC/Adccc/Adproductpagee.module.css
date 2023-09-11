@@ -1,0 +1,85 @@
+.addproductpage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.heading{
+    text-align: start;
+    font-size: 3rem;
+    color: #F89E4C;
+    border-bottom: 1px solid #F89E4C ;
+}
+.addproducts{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap:1rem;
+}
+.productstag{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: self-start;
+    border: 1px solid black;
+    font-size: 1.7rem;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+
+}
+.toform{
+    width: 100%;
+}
+.ptg{
+    width: 16%;
+}
+.ptg label{
+font-size: 1rem;
+color: red;
+}
+.ptgbtn{
+    width: 32%;
+}
+.btnc{
+    width: 7rem;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    cursor: pointer;
+
+}
+.addform{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: self-start;
+    border: 1px solid black;
+    font-size: 1.7rem;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+}
+.addtage{
+    font-size: 1.5rem;
+}
+.addform input{
+    padding: 0.2rem;
+}
+.addproduct{
+width: 100%;
+display: flex;
+justify-content: space-between ;
+align-items: start;
+font-size: 1.7rem;
+padding: 0.5rem;
+}
+.ptg img{
+    width: 100%;
+}
+.btn{
+    width: 5rem;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    cursor: pointer;
+}

@@ -14,6 +14,9 @@ import View from './Pages/ViewPage/View'
 import Cart from './Pages/Cart/Cart'
 import CartProvider from './Context/CartContext'
 import Carticon from './Pages/Global_Components/Carticon'
+import Admin from './Pages/Admin/Admin'
+import Singn from './Pages/Login & Sign/Singn'
+import Login from './Pages/Login & Sign/Login'
 function App() {
 
   return (
@@ -33,6 +36,9 @@ function App() {
        <Route path='/explore' element={<Explor/>}/>
        <Route path='/view' element={<View/>}/>
        <Route path='/cart' element={<Cart/>}/>
+       <Route path='/login' element={<Login/>}/>
+       <Route path='/sign' element={<Singn/>}/>
+       <Route path="/admin" element={<Admin/>}/>
       </Routes>
       </ViewContextProvider>
      </CartProvider>

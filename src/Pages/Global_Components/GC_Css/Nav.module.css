@@ -20,7 +20,7 @@
     width: 17rem;
 }
 .manu{
-    width: 60%;
+    width: 70%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -141,6 +141,6 @@
         width: 85%;
     }
     .manu{
-        width: 65%;
+        width: 72%;
     }
 }

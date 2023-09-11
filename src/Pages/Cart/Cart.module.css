@@ -34,33 +34,35 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  gap:2rem;
+  gap:1rem;
 }
 .itemtag{
     width: 100%;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: flex-start;
-    gap: 5rem;
     font-size: 1.5rem;
+}
+.ptable{
+    width: 15%;
 }
 .img{
     width: 10rem;
 }
 .lodiv{
-    padding: 1rem;
     width: 100%;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 12rem;
     font-size: 1.5rem;
     color: red;
+    gap: 1rem;
 }
 .loddiv{
-    text-align: center;
+    text-align:start;
 }
 .quantity{
+width:15% ;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -71,17 +73,16 @@ gap:1rem;
     height: 2.5rem;
 }
 .itemdata{
-    padding: 1rem;
     width: 100%;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 5rem;
     border-bottom: 1px dashed #000;
+    text-align: start;
+    gap: 1rem;
 }
-.itemdata img{
-    width: 10rem;
-    height: 10rem;
+.ptable img{
+    width: 100%
 }
 .itemdata h1{
 font-size: 1.5rem;
@@ -228,18 +229,27 @@ font-size: 1.5rem;
  }
     .itemtag{
         gap: 1rem;
+        text-align: start;
+        justify-content: flex-start;
     }
     .img{
         width: 5rem;
     }
     .lodiv{
         gap: 6rem;
+        text-align: start;
+        justify-content: flex-start;
     }
     .itemdata{
         gap: 1rem;
+        text-align: start;
+        justify-content: flex-start;
     }
     .itemdata img{
         width: 5rem;
         height: 5rem;
+    }
+    .nodisp{
+        display: none;
     }
 }

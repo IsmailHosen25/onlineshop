@@ -53,26 +53,28 @@ export default function Cart() {
 
           <div className={styles.item}>
             <div className={styles.itemtag}>
-              <p className={styles.img}>Imgage</p>
-              <p>Product Name</p>
-              <p>Price</p>
-              <p>Quantity</p>
-              <p>Total Amount</p>
+              <p className={styles.ptable} >Imgage</p>
+              <p className={`${styles.ptable} ${styles.nodisp}`}>Product Name</p>
+              <p className={styles.ptable}>Price</p>
+              <p className={styles.ptable}>Quantity</p>
+              <p className={styles.ptable}>Total Amount</p>
+              <p className={styles.ptable}>Delete</p>
             </div>
           {cartitem.length==0? <div className={styles.lodiv}>
-            <p>0</p>
-            <p>0</p>
-            <p>0</p>
-            <p>0</p>
-            <p>0</p>
+            <p className={styles.ptable}>0</p>
+            <p className={`${styles.ptable} ${styles.nodisp}`}>0</p>
+            <p className={styles.ptable}>0</p>
+            <p className={styles.ptable}>0</p>
+            <p className={styles.ptable}>0</p>
+            <p className={styles.ptable}>0</p>
           </div>:""}
           {cartitem.map((item,i)=>
           
           <div key={i} className={styles.itemdata}>
-            <img src={item.img}/>
-            <h1>{item.title}</h1>
-            <p>${item.price}</p>
-            <div className={styles.quantity}>
+            <img src={item.img} className={styles.ptable}/>
+            <h1 className={`${styles.ptable} ${styles.nodisp}`}>{item.title}</h1>
+            <p className={styles.ptable}>${item.price}</p>
+            <div className={`${styles.quantity} ${styles.ptable}`}>
 
               <button onClick={()=>{
                       
@@ -94,13 +96,15 @@ export default function Cart() {
               }}>+</button></div>
 
 
-            <p>${item.price*item.quntity}</p>
+            <p className={styles.ptable}>${item.price*item.quntity}</p>
+            <div className={styles.ptable}>
             <button className={styles.btn} onClick={()=>{
                         
                         const newcart=cartitem.filter((item,inedx)=> {return inedx !==i})
                         setcartitem(newcart)
 
             }}><i class="fa-solid fa-trash"></i></button>
+            </div>
           </div>
           )}
           <p className={styles.finalamount}>Final Amount: {cartitem.map(item=> item.price*item.quntity).reduce((total,value)=>total+value,0)}  </p>

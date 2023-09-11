@@ -1,0 +1,35 @@
+.addform{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: self-start;
+    border: 1px solid black;
+    font-size: 1.7rem;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    gap: 1rem;
+}
+.addform input{
+    padding: 0.2rem;
+}
+.ptg{
+    width: 15%;
+}
+.ptg label{
+font-size: 1rem;
+color: red;
+}
+.ptgbtn{
+    width: 15%;
+}
+.btnc{
+    width: 60%;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    cursor: pointer;
+
+}
+.select{
+    width: 100%;
+    padding: 0.2rem;
+}

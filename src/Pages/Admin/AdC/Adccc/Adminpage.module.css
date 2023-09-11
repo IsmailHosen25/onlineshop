@@ -1,0 +1,12 @@
+.adminpage{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1rem;
+}
+.pages{
+ width: 100%;
+ border: 1px solid #FF5635;
+ padding:0 1rem;
+}

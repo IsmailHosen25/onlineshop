@@ -1,0 +1,35 @@
+.addnav{
+  width: 20% ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+.navmanu{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap:2rem
+}
+.link{
+    text-decoration: none;
+    font-size: 2rem;
+    color: #000;
+    transition: 0.2s linear;
+}
+.link:hover{
+    color: gray;
+    transition: 0.2s linear;
+}
+.linkmail{
+    text-decoration: none;
+    font-size: 4rem;
+    color: #000;
+    transition: 0.2s linear;
+}
+.linkmail:hover{
+    color: gray;
+    transition: 0.2s linear;
+}

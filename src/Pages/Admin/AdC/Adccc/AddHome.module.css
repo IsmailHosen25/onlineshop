@@ -1,0 +1,46 @@
+.addhome{
+    width: 100%;
+}
+.heading{
+    font-size: 3rem;
+    color:#F89E4C ;
+    border-bottom: 1px solid #F89E4C;
+    margin-bottom: 2rem;
+}
+.addtage{
+    font-size: 1.5rem;
+}
+.addform{
+    margin-bottom: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: self-start;
+    gap:1rem;
+    border: 1px solid black;
+    font-size: 1.7rem;
+    padding: 0.5rem;
+}
+.addform input{
+    padding: 0.2rem;
+}
+.ptg{
+    width: 16%;
+}
+.ptg label{
+font-size: 1rem;
+color: red;
+}
+.ptgbtn{
+    width: 16%;
+}
+.btnc{
+    width: 7rem;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+.select{
+    width: 100%;
+    padding: 0.2rem;
+}
